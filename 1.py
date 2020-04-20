@@ -73,7 +73,7 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code == 200:
             num1+=1
             print('9调用成功'+str(num1)+'次')
-        if req.get(r'https://graph.microsoft.com/v1.0/me/calendarView',headers=headers).status_code == 200:
+        if req.get(r'https://graph.microsoft.com/beta/me/findRooms',headers=headers).status_code == 200:
             num1+=1
             print('10调用成功'+str(num1)+'次')
             print('此次运行结束时间为 :', localtime)
